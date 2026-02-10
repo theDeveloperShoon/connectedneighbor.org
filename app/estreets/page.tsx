@@ -1,6 +1,11 @@
 import { CiMail } from "react-icons/ci";
 import { FaArrowRight, FaPhone } from "react-icons/fa";
 
+export const metadata = {
+    title: "E-Streets",
+    description: "E-Streets contact information",
+};
+
 export default function EStreets() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
