@@ -23,6 +23,13 @@ export const contacts: Record<string, ContactConfig> = {
         description: "E-Streets contact info",
         phone: "973-382-2015",
         email: "estreets@gmail.com"
+    },
+    "omarramirez": {
+        slug: "omarramirez",
+        name: "Omar Ramirez",
+        description: "Omar Ramirez contact information",
+        phone: "973-704-5357",
+        email: "ORamirez59@msn.com"
     }
 };
 
