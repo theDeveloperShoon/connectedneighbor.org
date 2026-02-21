@@ -30,6 +30,13 @@ export const contacts: Record<string, ContactConfig> = {
         description: "Omar Ramirez contact information",
         phone: "973-704-5357",
         email: "ORamirez59@msn.com"
+    },
+    "juanrodriguez": {
+        slug: "juanrodriguez",
+        name: "Juan Rodriguez - Juancy",
+        description: "Juan Rodriguez contact information",
+        phone: "973-704-5357",
+        email: "mercadoblanco07@gmail.com"
     }
 };
 
