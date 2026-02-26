@@ -19,7 +19,7 @@ export const contacts: Record<string, ContactConfig> = {
     // Add new pages here easily
     "estreets": {
         slug: "estreets",
-        name: "E-Streets",
+        name: "Eddie S",
         description: "E-Streets contact info",
         phone: "973-382-2015",
         email: "estreets1@gmail.com"
