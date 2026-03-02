@@ -5,6 +5,7 @@
   --background-2: #d4d3d3;
   --foreground: #cababa;
   --foreground-2: #423e3e;
+  --surface-contrast: rgba(255, 255, 255, 0.85);
 }
 
 @theme inline {
@@ -21,6 +22,7 @@
     --background-2: #1a1a1a;
     --foreground: #ededed;
     --foreground-2: #b0b0b0;
+    --surface-contrast: transparent;
   }
 }
 
@@ -52,6 +54,18 @@ body {
 
 .ui-bg-secondary{
   background: var(--background-2);
+}
+
+.ui-bg-transparent-white {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.ui-bg-contrast {
+  background: var(--surface-contrast);
+}
+
+.ui-bg-transparent {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .ui-leading-normal {

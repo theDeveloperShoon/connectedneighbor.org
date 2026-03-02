@@ -36,7 +36,7 @@ export default function Header() {
                         />
                     </a>
                     <a href="/contact">
-                        <div className="flex gap-8 text-center items-center rounded-lg border-2 border-white-300 px-4 py-2 bg-white light:invert">
+                        <div className="flex gap-8 text-center items-center rounded-lg border-2 border-white-300 px-4 py-2 ui-bg-contrast ui-fg-primary-2">
                             <p className="font-sans">Request a Quote</p>  
                             <ImBubble className="w-6 h-6" />
                         </div>
