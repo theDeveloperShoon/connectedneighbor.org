@@ -16,14 +16,12 @@
   --font-staatliches: var(--font-staatliches);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+[data-theme="dark"] {
     --background: #0a0a0a;
-    --background-2: #1a1a1a;
+    --background-2: #3f3f3f;
     --foreground: #ededed;
     --foreground-2: #b0b0b0;
     --surface-contrast: transparent;
-  }
 }
 
 body {
