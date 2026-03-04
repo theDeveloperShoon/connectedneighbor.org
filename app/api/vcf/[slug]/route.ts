@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import vCard from 'vcf';
+// import vCard from 'vcf';
+import { vCard, vCardEmailProperty, vCardPhoneProperty } from 'vcardtool'
 import { getContact } from '@/lib/data';
 
 export async function GET(
@@ -13,9 +14,11 @@ export async function GET(
     return new NextResponse('Contact not found', { status: 404 });
   }
 
-  const card = new vCard();
-  card.set('fn', contact.name);
-  card.set('org', contact.name);
+  const card = new vCard(contact.name);
+  // card.set('version', '4.0');
+  // card.set('fn', contact.name);
+  // card.set('org', contact.name);
+
   // vcf package handles properties. For complex properties like TEL;TYPE=WORK, 
   // vcf might need specific object structure or just string.
   // Based on my test regarding .set(), let's try setting properties.
@@ -34,14 +37,17 @@ export async function GET(
   // If .set() just takes value, I can't easily add params.
   // But standard vCard 4.0 (which vcf uses) prefers 'tel' URI scheme anyway, e.g. tel:+1-555-555-5555.
   // So just setting valid value is often enough.
+  // card.
 
-  card.set('tel', contact.phone);
-  card.set('email', contact.email);
-  card.set('url', `${process.env.NEXT_PUBLIC_BASE_URL || 'https://connectedneighbor.org'}/${contact.slug}`);
+  // card.set('tel', contact.phone);
+  // card.set('email', contact.email);
+  // card.set('url', `${process.env.NEXT_PUBLIC_BASE_URL || 'https://connectedneighbor.org'}/${contact.slug}`);
   // Add image if available? vCard 4.0 supports PHOTO with URI.
-  if (contact.imageUrl) {
-    card.set('photo', contact.imageUrl);
-  }
+  // if (contact.imageUrl) {
+  //   card.set('photo', contact.imageUrl);
+  // }
+  card.properties.push(new vCardPhoneProperty(contact.phone));
+  card.properties.push(new vCardEmailProperty(contact.email));
 
   return new NextResponse(card.toString(), {
     headers: {
