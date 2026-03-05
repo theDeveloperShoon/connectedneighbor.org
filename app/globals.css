@@ -69,3 +69,7 @@ body {
 .ui-leading-normal {
   line-height: 1.5;
 }
+
+.ui-bg-gradient-to-tr {
+  background-image: linear-gradient(to bottom right, #f7beef, #200303);
+}
