@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import ImageSlideshow from "@/components/ImageSlideshow";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,10 +14,23 @@ export default function Home() {
                   src="https://8dmjj7pdiy9r34m1.public.blob.vercel-storage.com/public-site/test.png" 
                   alt="Description" 
                   layout="fill" 
-                  className="relative object-cover lg:rounded-b-xl w-full object-[50%_65%]"/>
+                  className="relative object-cover lg:rounded-b-xl w-full object-[50%_65%]"
+                />
+                <div className="absolute inset-0 bg-opacity-40">
+                  <div className="mt-40 px-4 lg:px-16 text-center md:text-left">
+                    <h1 className="text-8xl tracking ui-bg-gradient-to-tr bg-clip-text text-transparent">
+                      Defined.
+                      <br />
+                      Digital.
+                      <br />
+                      Distinct 
+                    </h1>
+                  </div>
+                </div>
               </section>
             </div>
           </div>
+          {/* <ImageSlideshow /> */}
           <div className="relative min-h-full">
             <section className="py-8 px-8 overflow-hidden">
               <div>
