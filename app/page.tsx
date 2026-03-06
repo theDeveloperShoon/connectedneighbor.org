@@ -18,7 +18,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-opacity-40">
                   <div className="mt-40 px-4 lg:px-16 text-center md:text-left">
-                    <h1 className="text-8xl tracking ui-bg-gradient-to-tr bg-clip-text text-transparent">
+                    <h1 className="text-8xl tracking ui-bg-gradient-to-tr bg-clip-text text-transparent text-shadow-sm">
                       Defined.
                       <br />
                       Digital.
