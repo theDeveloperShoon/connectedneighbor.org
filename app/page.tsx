@@ -23,7 +23,7 @@ export default function Home() {
                       <br />
                       Digital.
                       <br />
-                      Distinct 
+                      Distinct. 
                     </h1>
                   </div>
                 </div>
