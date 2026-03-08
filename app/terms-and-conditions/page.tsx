@@ -8,7 +8,7 @@ export default function TermsAndConditions() {
             <main className="flex min-h-screen flex-col py-16 px-16 sm:items-start">
                 <section className="pt-8">
                     <h1 className="text-4xl font-bold ui-fg-primary-2">Terms & Conditions</h1>
-                    <h2 className="ui-fg-primary-2">Last Updated: March 5, 2026</h2>
+                    <h2 className="ui-fg-primary-2">Last Updated: March 7, 2026</h2>
                 </section>
                 <section className="py-6">
                     <p className="ui-fg-primary-2 py-4">1. THIS DOCUMENT CONTAINS VERY IMPORTANT INFORMATION REGARDING YOUR RIGHTS 
